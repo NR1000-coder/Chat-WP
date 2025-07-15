@@ -11,7 +11,8 @@ a:hover {
 }
 
 #JSDom {
-  padding: 70px;
+  display: flex;
+  padding: 70px 0;
 }
 #JSDom .col-md-6 {
   display: flex;
@@ -19,29 +20,39 @@ a:hover {
   align-items: center;
 }
 #JSDom .chat {
-  border-radius: 10px;
-  padding: 7px;
-  padding: 15px;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
   border: 1px solid #e8edff;
   background-color: #e8edff;
-  width: 400px;
+  width: 660px;
+  height: 385px;
 }
 #JSDom .chat .message {
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 7px;
   border: 1px solid #ffffff;
-  background-color: #ffffff;
-  height: 200px;
+  background-color: #f8fbff;
+  height: 285px;
+  width: 586px;
+  overflow: auto;
+}
+#JSDom .chat .message .end {
+  display: flex;
+  justify-content: right;
 }
 #JSDom .chat .message .line {
   border: 1px solid #7991e7;
   background-color: #7991e7;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: 40px;
   padding: 5px;
+  margin: 5px;
+  max-width: 570px;
 }
 #JSDom .chat .message .line h3 {
+  font-size: 18px;
   color: #ffffff;
   margin: 2px;
 }
@@ -52,9 +63,10 @@ a:hover {
   margin: 15px 15px 0;
 }
 #JSDom .text input {
+  width: 200px;
   border-radius: 30px;
   padding: 5px 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   background-color: #ffffff;
 }
 #JSDom .text .send {
@@ -65,6 +77,18 @@ a:hover {
   margin-left: 10px;
 }
 #JSDom .text .send h3 {
+  font-size: 18px;
   color: #ffffff;
   margin: 2px;
+}
+@media (max-width: 1401px) {
+  #JSDom .col-md-6 {
+    width: 100%;
+  }
+  #JSDom .col-md-6 .chat {
+    width: 400px;
+  }
+  #JSDom .col-md-6 .chat .message {
+    width: 340px;
+  }
 }/*# sourceMappingURL=style.css.map */

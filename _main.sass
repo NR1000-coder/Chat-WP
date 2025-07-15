@@ -8,44 +8,57 @@ a
         color: black
 
 #JSDom
-    padding: 70px
+    display: flex
+    padding: 70px 0
     .col-md-6
         display: flex
         justify-content: center
         align-items: center
     .chat
-        border-radius: 10px
-        padding: 7px
-        padding: 15px
+        border-radius: 20px
+        padding: 30px
+        margin: 20px
         border: 1px solid #e8edff
         background-color: #e8edff
-        width: 400px
+        width: 660px
+        height: 385px
 
         .message
-            border-radius: 10px
+            border-radius: 20px
             padding: 7px
             border: 1px solid #ffffff
-            background-color: #ffffff
-            height: 200px
+            background-color: #f8fbff
+            height: 285px
+            width: 586px
+            overflow: auto
+            .end
+                display: flex
+                justify-content: right
 
             .line
                 border: 1px solid #7991e7
                 background-color: #7991e7
-                width: fit-content
+                width: min-content
                 border-radius: 40px
                 padding: 5px
+                margin: 5px
+                max-width: 570px
+
                 h3
+                    font-size: 18px
                     color: #ffffff
                     margin: 2px
+
     .text
         display: flex
         justify-content: center
         align-items: center
         margin: 15px 15px 0
         input
+            width: 200px
             border-radius: 30px
             padding: 5px 15px
-            border: 1px solid #ffffff
+            border: 1px solid #000000
             background-color: #ffffff
         .send
             border-radius: 30px
@@ -54,5 +67,15 @@ a
             background-color: #94a6e6
             margin-left: 10px
             h3
+                font-size: 18px
                 color: #ffffff
                 margin: 2px
+
+    @media ( max-width: 1401px )
+        .col-md-6
+            width: 100%
+            .chat
+                width: 400px
+                .message
+                    width: 340px
+
