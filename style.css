@@ -66,7 +66,7 @@ a:hover {
   width: 200px;
   border-radius: 30px;
   padding: 5px 15px;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   background-color: #ffffff;
 }
 #JSDom .text .send {
@@ -81,7 +81,7 @@ a:hover {
   color: #ffffff;
   margin: 2px;
 }
-@media (max-width: 1401px) {
+@media screen and (max-width: 1401px) {
   #JSDom .col-md-6 {
     width: 100%;
   }
