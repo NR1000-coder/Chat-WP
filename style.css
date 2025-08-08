@@ -44,9 +44,9 @@ a:hover {
 #JSDom .chat .message .line {
   border: 1px solid #7991e7;
   background-color: #7991e7;
-  width: -moz-min-content;
-  width: min-content;
-  border-radius: 40px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
   padding: 5px;
   margin: 5px;
   max-width: 570px;
